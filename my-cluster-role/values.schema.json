@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "rules": {
+      "type": "array",
+      "title": "Rules",
+      "items": {
+        "type": "object",
+        "properties": {
+          "apiGroups": {
+            "type": "array",
+            "title": "API Groups",
+            "description": "The API groups that contain the resources",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resources": {
+            "type": "array",
+            "title": "Resources",
+            "description": "The resources to grant access to",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verbs": {
+            "type": "array",
+            "title": "Verbs",
+            "description": "The actions allowed on resources",
+            "items": {
+              "type": "string",
+              "enum": ["get", "list", "watch", "create", "update", "patch", "delete"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Values",
+  "type": "object"
+}

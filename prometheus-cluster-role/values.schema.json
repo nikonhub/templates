@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "monitoring": {
+      "type": "object",
+      "title": "Monitoring Configuration",
+      "properties": {
+        "scrapeMetrics": {
+          "type": "boolean",
+          "title": "Scrape Metrics",
+          "description": "Enable metrics collection",
+          "default": true
+        },
+        "resources": {
+          "type": "array",
+          "title": "Resources",
+          "description": "Resources to monitor",
+          "items": {
+            "type": "string",
+            "enum": ["nodes", "pods", "services", "endpoints", "ingresses"]
+          },
+          "default": ["nodes", "pods"]
+        }
+      }
+    }
+  },
+  "title": "Values",
+  "type": "object"
+}

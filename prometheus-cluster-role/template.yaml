@@ -1,0 +1,7 @@
+name: prometheus
+description: Prometheus monitoring system
+version: 1.0.0
+dependencies:
+  - name: prometheus
+    repository: https://charts.bitnami.com/bitnami
+    version: latest

@@ -1,0 +1,6 @@
+monitoring:
+  scrapeMetrics: true
+  resources:
+    - nodes
+    - pods
+    - services
